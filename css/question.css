@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* #question */
+
+#question dl { margin: 0px 0 30px 0;}
+#question dl dt{
+	font-weight:bold;
+	text-align:left;
+	margin: 20px 0 5px 0;
+}
+#question dl dt span{
+	margin-right:10px;
+	color:#e50054;
+}
+
+#question dl dd ul{
+	margin-bottom:25px;
+	display: -webkit-flex;
+	display: flex;
+	border:1px solid #939393;
+}
+#question dl dd ul li{
+	border-right:1px solid #939393;
+}
+#question dl dd ul li:last-child{
+	border-right:none;
+}
+#question dl dd ul.three li{
+	width:33.333%;
+}
+#question dl dd ul.five li{
+	width:20%;
+}
+#question dl dd ul li label{
+	display:block;
+	position:relative;
+}
+#question dl dd ul li label input[type="radio"]{
+	position:absolute;
+	opacity:0;
+}
+#question dl dd ul li label input[type="radio"] + span{
+	display:block;
+	line-height:1;
+	padding:10px 0 10px 0;
+	background-color:#f9f9f9;
+	font-size:30px;
+	font-weight:bold;
+	cursor:pointer;
+	text-align: center;
+}
+#question dl dd ul li label input[type="radio"]:checked + span{
+	background-color:#e50054;
+	color:#fff;
+}
+#question dl dd ul li label input[type="radio"] + span span{
+	line-height:1.3;
+	display:block;
+	margin-top:5px;
+	font-size:12px;
+	font-weight:normal;
+}
+#question dl dd ul.five li label input[type="radio"] + span span{}
+
+#question dl dd textarea,.form.type02 textarea{
+	width:100%;
+	min-height: 200px;
+	padding:10px 10px;
+	border-radius: 5px;
+	background-color:#fff;
+	border:1px solid #939393;
+	vertical-align:bottom;
+}
+#question dl dd textarea.large{
+	min-height: 290px;
+}
+
+#question dl dd input[type="text"],.form.type02 input[type="time"]{
+	width:100%;
+	padding:10px 10px;
+	border-radius: 5px;
+	background-color:#fff;
+	border:1px solid #939393;
+	vertical-align:bottom;
+}
+
+#question dl dd label.calendar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border:1px solid #939393;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+#question dl dd label.calendar input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#question dl dd input[type="text"],.form.type02 input[type="text"]{
+	width:100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding:10px;
+	border:1px solid #939393;
+	color:#000;
+	border-radius: 5px;
+	font-size: 0.8rem;
+}
+
+#question dl dd input[type="text"].allow,.form.type02 input[type="text"].allow {
+	background:#fff url("../images/select_arrow.png") no-repeat right 10px center;
+	background-size:10px auto;
+}
+
+#question dl dd select,.form.type02 select{
+	width:100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding:10px;
+	border:1px solid #939393;
+	color:#000;
+	background:#f9f9f9 url("../images/select_arrow.png") no-repeat right 10px center;
+	background-size:10px auto;
+	border-radius: 5px;
+	font-size: 0.8rem;
+}
+
+#question dl dd select::-ms-expand {
+	display: none;
+}
+#question dl dd select option{
+	background:#fff;
+}
+

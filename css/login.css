@@ -1,0 +1,26 @@
+
+body { min-height:90vh; overflow: hidden;}
+
+#logo_sec { width: 40%; margin: 0 auto; padding-top: 5vh; text-align: center; margin-bottom: 30px;}
+#logo_sec h1 { font-size: 1.0rem; margin-top: 10px;}
+
+.login { background: #fff; width: 96%; margin: 0 auto; border-radius: 5px;}
+.login .inr { padding: 30px 20px; text-align: center;}
+
+footer { position: fixed; }
+
+.login .table { padding-right: 10px;}
+.login .table dt { color: #e50055; font-weight: bold;}
+.login .table dt,.login .table dd { border: none; font-size: 0.7rem; }
+.login p { font-size: 0.7rem; line-height: 2; margin-top: 30px;}
+
+
+@media only screen and (min-width:640px){
+
+  #logo_sec { padding-top: 15vh;}
+  #logo_sec #logo { width: 250px; margin: 0 auto;}
+  .login { width: 560px;}
+  .login .table { padding-right: 20px; box-sizing: border-box;}
+  .login .table dt,.login .table dd { border: none; font-size: 0.8rem; }
+
+}

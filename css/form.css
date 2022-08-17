@@ -1,0 +1,113 @@
+  /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+  /* form */
+  /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/ 
+
+
+  .form .location {}
+  .form .location li { border-bottom: 1px solid #eee; padding: 10px 0; margin-top: 3px;}
+  .form .location dl { }
+  .form .location dt { font-weight: bold;  margin-bottom: 5px;}
+  .form .location dd { display: inline-block; margin-bottom: 5px;}
+  .form .location dd { padding-right: 1em;}
+
+  /* .form .table dt { width: 20%;}
+  .form .table dt,  .form .table dd { padding: 10px 0;} */
+  .form .table input[type="text"],.form .table input[type="password"],.form textarea { border: 1px solid #ccc; width: 100%; padding: 8px;}
+  .form  button[type="submit"],.form  button[type="button"] {  display: block; font-size: 0.8rem; background: #999; padding: 6px 0px; background: #e50055; color: #fff; cursor: pointer; border-radius: 3px; margin: 0 auto; width: 70%; font-weight: bold; }
+  .form  button[type="submit"]:hover,.form  button[type="button"]:hover { opacity: 0.8;}
+
+  .form .radio > li { padding:5px 0; cursor: pointer;  }
+  .form .radio > li label {  }
+  .form .radio input[type="radio"]  { margin-top: -5px; vertical-align: middle;}
+
+  
+  /* type01 */
+   .form.type01 .table dt { text-align: center; font-size: 0.8rem; font-weight: bold; color: #e50055;}
+   .form.type01 .table dd { font-size: 0.8rem;}
+   .form  button[type="button"].delete,.form  button[type="button"].delete-btn  { background: #888; margin: 20px auto 40px  auto;}
+   .form  button[type="button"].append { background: #e50055;  width: 100%; margin: 0 auto; font-size: 0.6rem;}
+   .form  button[type="button"].delete.type02,.form  button[type="button"].delete-btn.type02 { width: 100%; margin: 0 auto; font-size: 0.6rem; }
+   .form  button[type="button"].delete.type03,.form  button[type="button"].append.type03 {  margin: 10px auto 10px  auto; font-size: 0.7rem;}
+   .form  button[type="submit"].store { width: 100%; padding: 13px 0px;}
+
+     /* type02 */
+   .form.type02 {}
+   .form.type02 h3 { font-size: 1.1rem; color:#e50054; border-bottom: 1px solid #e50054; padding: 8px 0; }
+
+   .form.type02 .youtube_edit input[type="checkbox"] { display: none; position: relative; background: #ddd;}
+   .form.type02 .youtube_edit input[type="checkbox"] ~ label { cursor: pointer; font-size: 0.6rem;  text-align: center; background: #ddd; width: 80%; margin: 10px auto; padding:5px; display: block; border-radius: 10px; transition: all 300ms 0s ease;}
+   .form.type02 .youtube_edit input[type="checkbox"]:checked ~ label { background: #e50055; color: #fff; transform: scaleX(1.1); }
+
+   /* type03 */
+   .form.type02.base h3 { border-bottom: 1px dashed;}
+
+   .form.type02.base dt,.form.type02.base dd { border-bottom: 1px solid #ccc; padding-top: 10px; padding-bottom: 10px;}
+   .form.type02.base h3 { margin: 30px 0 10px 0;}
+   .form.type02.base h3 ~ .info { font-size: 0.8rem; color: #e50055;}
+   .form.type02.base h3.nextToggleBtn ~ .info { padding-left: 2em;}
+   .form.type02.base h3.nextToggleBtn ~ .info ~ .box { display: none; } 
+   .form.type02.base .box { margin-top: 20px;} 
+   .form.type02.base h3.nextToggleBtn { position: relative; padding-left: 23px; cursor: pointer;}
+   .form.type02.base h3.nextToggleBtn::before { font-size: 0.8rem; display: block; position: absolute; content: " ▶︎ ";transform: rotate(0deg); top: 12px; left: 0px; transition: all 300ms 0s ease;}
+   .form.type02.base h3.nextToggleBtn.open::before { transform: rotate(90deg); }
+   .form.type02.base h3.nextToggleBtn.open { background: #f9f9f9;}
+   .form.type02.base input[type="time"] { text-align: center;}
+   .form.type02.base .btn.type01 { display: inline-block; padding: 4px 20px;}
+   .form.type02.base .table_type { font-size: 0.8rem;}
+   .form.type02.base .table_type * { padding: 4px;}
+   .form.type02.base .table_type textarea { min-height: auto;}
+   .form.type02.base .table_type.type02 th { width: 20%;}
+   .form.type02.base .icon { width: 80px; padding: 5px 10px; margin-top: 5px; border-radius: 3px; cursor: pointer;}
+
+   .form.type02.base input[type="file"] { font-size: 0.7rem;}
+   .form.type02.base .file_select_sec li { width: 32%;}
+   .form.type02.base .feature_checkbox li { width: 33%; margin: 4px 0;}
+   .form.type02.base label { font-size: 0.7rem;}
+
+   @media only screen and (max-width:639px){
+   .form.type01 .table dt { text-align: left; border-bottom: none; border-left: 5px solid #e50055; padding: 5px 0 5px 10px; margin: 10px 0;}
+   .form.type01 .table dd { padding: 0 0 10px 0;}
+   .form.type01 .table dt, .form.type01 .table dd { display: block; width: 100%;}
+
+   .form.type02.base dl { display: block;  }
+   .form.type02.base dt { display: block; border-bottom: none!important;background: #f1f1f1;  text-align: center; font-weight: bold;}
+   .form.type02.base dd { display: block;  width: 100%; }
+   .form.type02.base .inline { display: inline-block; width: 50%;}
+   }
+
+   /*message*/
+   .flush_message { border: 1px solid #e50055; padding: 10px 20px; background: #efe4e5; margin: 20px 0; font-size: 0.8rem; color: #e50055;}
+   
+   .up_imagePreview_sec { margin: 20px 0; display: none;}
+
+  @media only screen and (min-width:640px){
+
+    /* type03 */
+    .form.type02.base dl {  }
+    .form.type02.base dt { width: 20%; text-align: center; vertical-align: middle; font-weight: bold; font-size: 0.8rem; background: #f1f1f1;}
+    .form.type02.base dd { width: 80%; padding-left: 1em; box-sizing: border-box;}
+    .form.type02.base .feature_checkbox li { width: 20%; }
+    .form.type02.base label { font-size: 0.8rem;}
+
+    .form .table dt { width: 25%;}
+    .form  button[type="submit"],.form  button[type="button"] { width: 200px; font-size: 0.8rem; padding: 6px 10px;}
+    .form  button[type="submit"].store { width: 350px; padding: 8px 10px;}
+    .form  button[type="button"].delete.type02 {  }
+    .form  button[type="button"].delete.type03 { font-size: 0.8rem;}
+
+      /* top */
+    .form .iw_5 {  width: 5%!important;}
+    .form .iw_10 { width: 10%!important;;}
+    .form .iw_15 { width: 15%!important;;}
+    .form .iw_20 { width: 20%!important;;}
+    .form .iw_25 { width: 25%!important;;}
+    .form .iw_30 { width: 30%!important;;}
+    .form .iw_35 { width: 35%!important;;}
+    .form .iw_40 { width: 40%!important;;}
+    .form .iw_50 { width: 40%!important;;}
+    .form .iw_70 {width: 70%!important;;}
+
+    /* type02 */
+    .form.type02 .youtube_edit input[type="checkbox"] ~ label {  font-size: 0.8rem; }
+
+  }
